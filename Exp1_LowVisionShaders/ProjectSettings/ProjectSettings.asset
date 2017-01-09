@@ -346,11 +346,11 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   metroPackageName: Exp1LowVisionShaders
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 0014fec03928d301
   metroApplicationDescription: Exp1_LowVisionShaders
   wsaImages: {}
   metroTileShortName: 

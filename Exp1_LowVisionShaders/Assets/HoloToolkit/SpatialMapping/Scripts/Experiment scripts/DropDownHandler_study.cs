@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 public class DropDownHandler_study : MonoBehaviour
 {
-    List<string> names = new List<string>() {"select_study",   "study_01", "study_02"}; 
+    List<string> names = new List<string>() {"study_01", "study_02"}; 
 
     public Dropdown dropdown;
     public Text selectedParticipant; 
