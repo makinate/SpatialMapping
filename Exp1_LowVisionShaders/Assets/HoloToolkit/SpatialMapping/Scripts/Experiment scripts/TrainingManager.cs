@@ -48,6 +48,7 @@ public class TrainingManager : MonoBehaviour
         mappingMaterial.DrawVisualMeshes = false;
     }
 
+
     ///  <summary>
     ///  Switch to a designated state and handle the associated changes to the experimental and stimulus settings
     /// </summary>
@@ -62,7 +63,7 @@ public class TrainingManager : MonoBehaviour
             case ExperimentState.PrepPractice:
                 // Instructions
                 startTime = Time.time;                      // Define Starttime for state
-                textToSpeechManager.SpeakText("Welcome to our experiment! Let's begin with a quick tutorial. Depending on the experimental condition, you will see overlays that may help you with the task. Click to start exploring the room.Try walking around the room with the HoloLens and try to get an idea of what is in the room. ");
+                textToSpeechManager.SpeakText("Welcome to our experiment! Let's begin with a quick tutorial. Try walking around the room with the HoloLens and try to get an idea of what is in the room. Click to start.");
                 break;
             case ExperimentState.BeginPractice:
                 //startTime = Time.time;                      // Define Starttime for state
@@ -74,7 +75,7 @@ public class TrainingManager : MonoBehaviour
                 break;
             case ExperimentState.EndPractice:
                 mappingMaterial.DrawVisualMeshes = false;   // switch shader off again
-                textToSpeechManager.SpeakText("Thank you, the tutorial is over. You can take off the HoloLens now hand it back to the experimenter and wait for instructions.");
+                textToSpeechManager.SpeakText("Thank you. Take off the HoloLens and return it to the experimenter.");
                 break;
             case ExperimentState.QuitApp:
                 Application.Quit(); // Quit App

@@ -21,13 +21,15 @@ namespace HoloToolkit.Unity
 
         private GameObject Experiment;                      // Used to access the spatial mapping mesh
         ExperimentManager experimentManager;          // Represents the spatial mapping component
+        TrainingManager trainingManager;
         private GestureRecognizer gestureRecognizer;
 
         void Start()
         {
             // Get a reference to the spatial mesh
-            Experiment = GameObject.Find("Experiment");
-            experimentManager = Experiment.GetComponent<ExperimentManager>();
+            Experiment          = GameObject.Find("Experiment");
+            experimentManager   = Experiment.GetComponent<ExperimentManager>();
+            trainingManager     = Experiment.GetComponent<TrainingManager>();
 
             // Create a new GestureRecognizer. Sign up for tapped events.
             gestureRecognizer = new GestureRecognizer();
@@ -45,6 +47,7 @@ namespace HoloToolkit.Unity
             //textToSpeechManager.SpeakText("Click! The time is " + DateTime.Now.ToString("t") + "Tap number: " + tapCount);
             tapCount = tapCount + 1;
             experimentManager.ClickSwitch = true;
+            trainingManager.ClickSwitch = true;
         }
 
         void OnDestroy()

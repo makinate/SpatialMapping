@@ -760,7 +760,7 @@
 		return ret;	    // Need to return frag here with color code strategy so color isn't changed below
 
 	}// Standard strategy - calculate depth based on standardized distance from user
-	else if (_Equation == 19) {
+	/*else if (_Equation == 19) {
 		ret.r = 1 / distance;
 		ret.g = 0;
 		ret.b = distance;
@@ -770,7 +770,7 @@
 		ret.g *= ret.a;
 		ret.b *= ret.a;
 		return ret;
-	}
+	}*/
 	// Set the color depending on input from the user
 	if (_Color == 0) {						    // White
 		ret.r = depth; ret.g = depth; ret.b = depth;
