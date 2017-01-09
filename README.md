@@ -1,5 +1,7 @@
 # Exp1_LowVisionShader
 Basic app for Shaders for Low Vision experiment. 
+
+
 ## Basic Unity and Gitignore instructions
 Make sure that .gitignore file and Unity settings are correct and not overwritten to make sure the SpatialMapping hierarchy and settings are
 constant across all versions for all users.
