@@ -1,11 +1,11 @@
 # Exp1_LowVisionShader
-
+Basic app for Shaders for Low Vision experiment. 
 ## Basic Unity and Gitignore instructions
-Make sure that .gitignore file and Unity settings are correct and not overwritten.
-
-In order to make sure the SpatialMapping heirarchy and settings are
-constant across all versions for all users, the following changes were
-made to the project settings - under Edit -> Project Settings -> Editor
-- the Version Control mode setting was changed to support "Visible Meta
-Files" and the Asset Serialization mode setting was changed to "Force
+Make sure that .gitignore file and Unity settings are correct and not overwritten to make sure the SpatialMapping hierarchy and settings are
+constant across all versions for all users.
+- Go to project settings - under Edit -> Project Settings -> Editor
+- change Version Control mode setting to support "Visible Meta
+Files" and the Asset Serialization mode setting to "Force
 Text"
+
+Otherwise terrible things will happen and you will find yourself in git purgatory. 
