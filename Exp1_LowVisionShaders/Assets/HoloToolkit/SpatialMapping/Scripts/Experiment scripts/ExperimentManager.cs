@@ -49,6 +49,7 @@ public class ExperimentManager : MonoBehaviour
     }
 
 
+
     ///  <summary>
     ///  Switch to a designated state and handle the associated changes to the experimental and stimulus settings
     /// </summary>
@@ -86,7 +87,7 @@ public class ExperimentManager : MonoBehaviour
                 break;
             case ExperimentState.BeginTask2:
                 textToSpeechManager.SpeakText("Go!");
-                //mappingMaterial.DrawVisualMeshes = true;
+                DisplayShader();
                 break;
             case ExperimentState.Task2:
                 startTime = Time.time;

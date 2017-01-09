@@ -48,7 +48,6 @@ public class TrainingManager : MonoBehaviour
         mappingMaterial.DrawVisualMeshes = false;
     }
 
-
     ///  <summary>
     ///  Switch to a designated state and handle the associated changes to the experimental and stimulus settings
     /// </summary>

@@ -19,12 +19,14 @@ public class LogPosRot : MonoBehaviour
     public Text sbjInfo;    // subject name
     public Text shaderInfo;     // shader name: needs to be accessible through other scripts
     public Text layoutInfo;
-    public string tempEvent;   // eventName: needs to be accessible through other scripts
+    public Text totInfo; // Sets training or trial variable
+    public string tempEvent;   // eventName: needs to be accessible through other scripts   
     public GameObject SpatialMapping;
     public string study = "study_00";
     public string sbj = "sbj_00";
     public string layout = "layout_00";
     public string shader = "shader_00";
+    public string trainingOrTrial = "select"; // training or trial
 
     public GameObject Experiment;
 
@@ -54,14 +56,16 @@ public class LogPosRot : MonoBehaviour
         sbj    = sbjInfo.text;
         layout = layoutInfo.text;
         shader = shaderInfo.text;
+        trainingOrTrial = totInfo.text;
 
+        Debug.Log("TrainingOrTrial: " + trainingOrTrial);
         Debug.Log("study: " + study);
         Debug.Log("sbj: " + sbj);
         Debug.Log("shader: " + layout);
         Debug.Log("shader: " + shader);
 
         filePath = "";
-        fileName = study + '_' + sbj +'_'+ layout + '_' + shader + '_' + timeStamp;
+        fileName = study + '_' + sbj +'_'+ layout + '_' + shader + '_' + trainingOrTrial + '_' + timeStamp;
         Debug.Log("fileName: " + fileName);
 
 
