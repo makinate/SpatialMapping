@@ -197,19 +197,19 @@ public class TrainingManager : MonoBehaviour
         {
             ChangeShader(ShaderState.Off);
         }
-        else if (logPosRot.shader == "shader_01")
+        else if (logPosRot.shader == "Color")
         {
             ChangeShader(ShaderState.Color);
         }
-        else if (logPosRot.shader == "shader_02")
+        else if (logPosRot.shader == "Alpha")
         {
             ChangeShader(ShaderState.Transparency);
         }
-        else if (logPosRot.shader == "shader_03")
+        else if (logPosRot.shader == "Pulse")
         {
             ChangeShader(ShaderState.Pulse);
         }
-        else if (logPosRot.shader == "shader_04")
+        else if (logPosRot.shader == "Adjust_HL")
         {
             ChangeShader(ShaderState.AdjustHoloLens);
 

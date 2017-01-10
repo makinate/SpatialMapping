@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 public class DropDownHandler_shader : MonoBehaviour
 {
-    List<string> names = new List<string>() { "no_shader","shader_00", "shader_01", "shader_02", "shader_03" }; 
+    List<string> names = new List<string>() { "no_shader","Color", "Alpha", "Pulse", "Adjust_HL" }; 
 
     public Dropdown dropdown;
     public Text selectedParticipant; 
